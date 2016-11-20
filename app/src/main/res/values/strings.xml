@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="clic">Clic</string>
+    <string name="button1">Botón1</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="icon_ok">Texto de prueba</string>
+    <string name="hello_world">¡Hola Mundo!</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="imagen_ejemplo">Imagen de ejemplo</string>
+    <string name="escribe_algo">Escriba algo:</string>
+    <string name="usuario">Usuario</string>
+</resources>

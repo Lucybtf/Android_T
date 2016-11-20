@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.com.app.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/BtnBotonSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <ToggleButton
+        android:id="@+id/BtnToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:layout_below="@+id/BtnBotonSimple"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/BtnSwitch"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:layout_below="@+id/BtnToggle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <ImageButton
+        android:id="@+id/BtnImagen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icon_ok"
+        android:src="@drawable/ic_estrella"
+        android:divider="?android:dividerVertical"
+        android:dividerPadding="6dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/BtnToggle"
+        android:layout_alignEnd="@+id/BtnToggle" />
+
+    <Button
+        android:id="@+id/BtnBotonMasImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BtnImagen"
+        android:layout_below="@+id/BtnImagen"
+        android:layout_marginTop="17dp"
+        android:drawableLeft="@drawable/ic_estrella"
+        android:drawablePadding="5dp"
+        android:text="@string/clic" />
+    <!-- style="?android:borderlessButtonStyle" -->
+
+
+
+    <LinearLayout
+        android:id="@+id/BarraBtnSinBorde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:divider="?android:dividerVertical"
+        android:dividerPadding="6dp"
+        android:layout_below="@+id/BtnBotonMasImagen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Texto de prueba"
+            android:layout_above="@+id/fab"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton android:id="@+id/BtnSinBorde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/icon_ok"
+            android:src="@drawable/ic_estrella"
+            style="?android:borderlessButtonStyle"
+            android:layout_below="@+id/BtnBotonMasImagen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lapiz"
+        app:borderWidth="0dp"
+        app:rippleColor="#ffffff"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignBottom="@+id/BtnImagen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/BarraBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/buttonBarStyle">
+
+        <Button android:id="@+id/BtnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Aceptar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#090000" />
+
+        <Button android:id="@+id/BtnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Cancelar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#080000" />
+
+    </LinearLayout>
+
+    <!--<ImageButton android:id="@+id/BtnSinBorde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icon_ok"
+        android:src="@drawable/ic_estrella"
+        style="?android:borderlessButtonStyle"
+        android:layout_alignTop="@+id/fab"
+        android:layout_alignRight="@+id/BtnBotonMasImagen"
+        android:layout_alignEnd="@+id/BtnBotonMasImagen" />-->
+
+
+</RelativeLayout>
